@@ -18,6 +18,7 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
 3. Creación Role IAM
 4. Creación EC2
   - Launch Instances
+    + EN CONSTRUCCIÖN
   - update OS
     + sudo apt update -y
       
@@ -46,6 +47,7 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
     
 5. Implementación dentro de la EC2
   - Attach IAM role en la EC2 creado
+    + EN CONSTRUCCIÖN
     
   - Clonar git
     + mkdir super_mario
