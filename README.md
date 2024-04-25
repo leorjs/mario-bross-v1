@@ -21,7 +21,7 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
 
 
 - Acceder a la consola de aws y buscar el servicio de VPC
-  
+
 ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/99343f49-668d-4f98-8ba4-2ba84bc00270)
 
 - Luego en la parte superior derecho vamos a <create vpc>
