@@ -100,8 +100,14 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
     - Buscar el LoadBalancer Ingress para acceder al juego
       + kubectl describe service mario-service
         
+
+</details>
+<details>
+<summary>Eliminación de Infraestructura</summary>
+
     - Destruir toda la infraestructura
       + kubectl delete service mario-service
       + kubectl delete deployment mario-deployment
       + cd EKS-TF --> terraform destroy --auto-approve
+
 </details>
