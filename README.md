@@ -15,21 +15,27 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
   + Github
 
 # Pasos a seguir
+<details>
+<summary>Creación VPC</summary>
+   
+    - EN CONSTRUCCIÖN
 
-1. Creación VPC
-   
+</details>
+
+<details>
+<summary>Creación Bucket S3</summary>
+
     - EN CONSTRUCCIÖN
-    
-3. Creación Bucket S3
-   
+</details>
+
+<details>
+<summary>Creación Role IAM</summary>
+  
     - EN CONSTRUCCIÖN
-    
-5. Creación Role IAM
-   
-    - EN CONSTRUCCIÖN
-    
-6. Creación EC2
-     
+</details>
+<details>
+<summary>Creación EC2</summary>
+  
     - Launch Instances
       
       + EN CONSTRUCCIÖN
@@ -59,8 +65,10 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
       + wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
       + echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
       + sudo apt update && sudo apt install terraform -y
-    
-5. Implementación dentro de la EC2
+</details>
+<details>
+<summary>Implementación dentro de la EC2</summary>
+  
     - Attach IAM role en la EC2 creado
       + EN CONSTRUCCIÖN
       
@@ -96,3 +104,4 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
       + kubectl delete service mario-service
       + kubectl delete deployment mario-deployment
       + cd EKS-TF --> terraform destroy --auto-approve
+</details>
