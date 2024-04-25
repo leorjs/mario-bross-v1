@@ -42,7 +42,18 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
 <details>
 <summary>Creación Bucket S3</summary>
 
-    - EN CONSTRUCCIÖN
+- En la consola de AWS en la parte superior izquierda colocar <s3>
+- Click a la opción <Create bucket> esta en la parte derecha de la consola
+  + Bucket type --> General purpose
+  + Bucket name --> super-mario-bross-ec2-v1 (Este nombre del bucket se agregara en el terraform)
+  + Object Ownership --> ACLS disable (recommended)
+  + Block Public Acces setting for this bucket
+    - Tildar la opción --> Block all public access (normalment esta tildado)
+  + Bucket Versioning --> Disable
+  + Default encrytion
+    - Server-side encryption with Amazon S3 managed keys (SSE-S3) >> Tildar
+    - Bucket Key --> Disable
+- click --> Create bucket
 </details>
 
 <details>
