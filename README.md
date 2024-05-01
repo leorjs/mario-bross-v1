@@ -90,7 +90,25 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
   
 - Launch Instances
   
-  + EN CONSTRUCCIÖN
+  + Vamos al dashboard de aws de nuevo y en search buscamos EC2
+  + Luego en la pantalla principal de EC2 vemos un cuadro naranja que dice: Launch instance y le damos click
+    ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/487f24d1-221f-4ae1-b010-607dcd9b6a79)
+  + Agregamos un nombre a nuestra EC2 y seleccionamos en OS --> UBUNTU
+    ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/e1acb832-65e0-4e9a-a640-2986a6ff9a36)
+  + La imagen y el tipo de instance lo dejamos por default
+    ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/153f5c3e-a083-4bcb-9bb2-3d1791b49686)
+  + Para el siguiente punto Key pair crea un nuevo key pair con la extensión .PEM y lo descargas, luego lo seleccionas
+    ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/95d4065f-6299-4a14-906b-b4152707559d)
+  + Para el siguiente punto --> Network setting le damos edit
+      + VPC --> agregamos la VPC que ya habiamos creado
+      + Subnet --> dejalo por default pero verifica que este en una subnet public
+      + Auto-assing public IP --> cambiar a ENABLE (importante este punto)
+      + Firewall (security group) --> Selecciona el SG que antes ya creamos
+    ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/a67f1a4b-fb6e-4cf7-839e-64bf0e18db2b)
+  + Luego vamos a la opción Advenced details y buscamos la siguiente opción para tildarlo
+    ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/121f0e5d-e6d3-4daf-bb7c-d399ff67ca4d)
+
+    
     
 - update OS
   + sudo apt update -y
