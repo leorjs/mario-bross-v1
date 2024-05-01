@@ -59,10 +59,34 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
 <details>
 <summary>Creación Role IAM</summary>
   
-    - EN CONSTRUCCIÖN
+- En el search del dashboard buscamos el servicio de IAM
+      
+  ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/3bab42df-3ffe-448e-a1bc-30b6cb4e77e4)
+   
+- Luego vamos a la opción Access management --> Roles
+  
+  ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/9b4e7878-8e96-460d-b313-5b8ee4961509)
+
+- Creamos un role > Create role
+  
+  ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/81af3158-3759-46a0-b1e7-f0c7d3a48b37)
+
+- Seleccionamos la opción AWS service y abajo en Use case seleccionamos --> ec2 --> NEXT
+  
+  ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/1a6f1f57-8f97-467b-b4ef-0d2b444a2213)
+
+- Agregamos el permiso de AdministratoAccess
+
+  ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/8d1c61e1-99af-4dcb-b8e6-92ac0bce5d7b)
+
+- Luego colocamos el nombre del Role y las demás opciones la dejamos por default y le damos --> CREATE
+
+  ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/3104a047-c3c6-463b-aee8-d6cec2bac579)
+
+
 </details>
 <details>
-<summary>Creación EC2</summary>
+<summary>Creación EC2 e Instalación de tools</summary>
   
 - Launch Instances
   
