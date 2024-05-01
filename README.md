@@ -107,9 +107,19 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
     ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/a67f1a4b-fb6e-4cf7-839e-64bf0e18db2b)
   + Luego vamos a la opción Advenced details y buscamos la siguiente opción para tildarlo
     ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/121f0e5d-e6d3-4daf-bb7c-d399ff67ca4d)
+  + Luego al final damos click --> Lanch instance
+    
+- Ingresar a la EC2
+  + Vía ssh
+    + Vamos al dashboard de las instance y tildamos nuestra nueva EC2 --> y luego en la parte superior le damos CONNECT
+      ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/f302b5d7-4c17-4f14-8d65-71e86a7743b3)
+    + Vamos a la opción EC2 instance Connect y le damos connect, automaticamente entraran a la EC2
 
-    
-    
+  + Vía console AWS
+    + Vamos al dashboard de las instance y tildamos nuestra nueva EC2 --> y luego en la parte superior le damos CONNECT
+    + Luego vamos a la opción de SSH Client, abajo tendran un example para conectarse.
+      + ssh -i "key-pair.pem" ubuntu@<Reemplazar la IP public que tiene su EC2>
+      + Nota importante: Deben estar en la ruta donde se encuentra el archivo .pem o en su defecto en el comando agregar el path.
 - update OS
   + sudo apt update -y
     
