@@ -149,7 +149,11 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
 <summary>Implementación dentro de la EC2</summary>
   
 - Attach IAM role en la EC2 creado
-  + EN CONSTRUCCIÖN
+  + Vamos al dashboard de EC2 y tildamos nuestra EC2 luego vamos a la opción Actions --> Security --> Modify IAM role
+    ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/34987418-40c4-44f3-9d49-78afd7383edf)
+  + Luego seleccionamos nuestro Role que previamente ya creamos y le damos Update IAM role
+    ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/4c57dbc4-1c93-40ed-a5af-03cec9810274)
+
   
 - Clonar git
   + mkdir super_mario
