@@ -118,10 +118,11 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
   + Vía console AWS
     + Vamos al dashboard de las instance y tildamos nuestra nueva EC2 --> y luego en la parte superior le damos CONNECT
     + Luego vamos a la opción de SSH Client, abajo tendran un example para conectarse.
-      + ssh -i "key-pair.pem" ubuntu@<Reemplazar la IP public que tiene su EC2>
+      + ssh -i "key-pair.pem" ubuntu@<Reemplazar-la-ip-publica-de-la-ec2>
       + Nota importante: Deben estar en la ruta donde se encuentra el archivo .pem o en su defecto en el comando agregar el path.
 - update OS
-  + sudo apt update -y
+  + Al momento de ingresar vía ssh a nuestra EC2 lo primero que debemos hacer es hacer un update del OS
+    + command: $sudo apt update -y
     
 - Instalación de aws cli
   + curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
