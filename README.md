@@ -183,7 +183,7 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
   + terraform apply --auto-approve
     
 - Updatear la configuración de EKS para conectarse al cluster
-  + aws eks update-kubeconfig --name EKS_CLOUD --region us-east-1
+  + aws eks update-kubeconfig --name EKS_CLOUD --region <REGION-CONFIGURADA>
     
 - Creación del deployment y service del mario-bross
   + kubectl apply -f deployment.yaml
