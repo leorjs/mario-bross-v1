@@ -195,7 +195,7 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
 - Buscar el LoadBalancer Ingress para acceder al juego
   + kubectl describe service mario-service
     ![image](https://github.com/leorjs/mario-bross-v2/assets/119978221/a8fd5c83-281d-4102-9065-b5cd5ff7b11a)
-
+  + Copien la url del LoadBalancer Ingress y lo pegan en un brower, y taran tendrán super mario bross corriendo
         
 
 </details>
