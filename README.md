@@ -175,6 +175,7 @@ Super mario bross desplegado dentro de una EC2 usando Terraform + EKS
   + cd EKS-TF
   + Editar el archivo backend.tf file by → vim backend.tf
     - Se debe agregar el nombre del bucket antes creado
+  + Cambiar la región en el archivo de provider.tf --> us-east-1
       
 - Ejecución del terraform para crear el EKS
   + terraform init
